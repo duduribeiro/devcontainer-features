@@ -1,5 +1,5 @@
 {
-    "all_bookworm": {
+    "all": {
         "image": "mcr.microsoft.com/devcontainers/base:1-bookworm",
         "features": {
             "neovim": {
