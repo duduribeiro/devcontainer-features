@@ -1,0 +1,25 @@
+{
+    "name": "Tmux (from source)",
+    "id": "tmux",
+    "version": "1.0.0",
+    "dependsOn": {
+      "ghcr.io/devcontainers/features/common-utils": {},
+    },
+    "description": "A feature to install Tmux building from source",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "3.4",
+                "3.3a",
+                "3.3"
+            ],
+            "default": "latest",
+            "description": "The version of Tmux to be installed (latest, or a specific version (see versions at https://github.com/tmux/tmux/releases))"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
