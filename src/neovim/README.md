@@ -1,7 +1,7 @@
 
-# Neovim (neovim)
+# Neovim (from source) (neovim)
 
-A feature to install Neovim
+A feature to install Neovim building from source
 
 ## Example Usage
 
