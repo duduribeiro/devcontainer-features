@@ -1,7 +1,11 @@
 {
     "name": "Neovim",
     "id": "neovim",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "dependsOn": {
+      "ghcr.io/devcontainers/features/common-utils": {},
+      "ghcr.io/devcontainers/features/git": {}
+    },
     "description": "A feature to install Neovim",
     "options": {
         "version": {
@@ -21,6 +25,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/git"
     ]
 }
