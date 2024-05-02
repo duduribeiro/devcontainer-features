@@ -14,3 +14,18 @@ Build Neovim from source and installs
     }
 }
 ```
+
+## Tmux
+
+Build Tmux from source and installs
+
+```jsonc
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/duduribeiro/devcontainer-features/tmux:1": {
+            "version": "latest"
+        }
+    }
+}
+```
