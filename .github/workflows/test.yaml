@@ -15,6 +15,7 @@ jobs:
         features:
           - neovim
           - tmux
+          - lunarvim
         baseImage:
           - debian:latest
           - ubuntu:latest
