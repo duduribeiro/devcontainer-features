@@ -1,7 +1,7 @@
 {
   "name": "Lunarvim",
   "id": "lunarvim",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependsOn": {
     "ghcr.io/devcontainers/features/common-utils": {},
     "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {
