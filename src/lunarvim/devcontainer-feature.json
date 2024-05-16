@@ -1,0 +1,16 @@
+{
+  "name": "Lunarvim",
+  "id": "lunarvim",
+  "version": "0.0.1",
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/common-utils": {},
+    "ghcr.io/duduribeiro/devcontainer-features/neovim:1": {
+      "version": "nightly"
+    }
+  },
+  "description": "A feature to install Lunarvim (it uses Neovim nightly) and most recent version of Lunarvim",
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/duduribeiro/devcontainer-features/neovim"
+  ]
+}
