@@ -61,7 +61,7 @@ echo "Building..."
 
 cd /tmp/neovim-${ADJUSTED_VERSION}
 
-make && make CMAKE_INSTALL_PREFIX=/usr/local/nvim install
+make CMAKE_BUILD_TYPE=Release && make CMAKE_INSTALL_PREFIX=/usr/local/nvim install
 ln -sf /usr/local/nvim/bin/nvim /usr/local/bin/nvim
 
 rm -rf /tmp/neovim-${ADJUSTED_VERSION}

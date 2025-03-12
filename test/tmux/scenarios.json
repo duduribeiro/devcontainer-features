@@ -2,8 +2,8 @@
     "install_tmux_bookworm": {
         "image": "mcr.microsoft.com/devcontainers/base:1-bookworm",
         "features": {
-            "neovim": {
-                "version": "nightly"
+            "tmux": {
+                "version": "3.4"
             }
         }
     }
