@@ -8,7 +8,7 @@ VERSION=${VERSION:-latest}
 # Debian / Ubuntu dependencies
 install_debian_dependencies() {
   apt-get update -y
-  apt-get -y install libevent-dev ncurses-dev bison
+  apt-get -y install libevent-dev ncurses-dev bison build-essential
 
   apt-get -y clean
   rm -rf /var/lib/apt/lists/*

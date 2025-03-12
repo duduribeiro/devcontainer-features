@@ -3,7 +3,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:1-bookworm",
         "features": {
             "tmux": {
-                "version": "3.4"
+                "version": "3.5"
             }
         }
     }

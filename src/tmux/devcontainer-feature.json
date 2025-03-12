@@ -11,6 +11,7 @@
             "type": "string",
             "proposals": [
                 "latest",
+                "3.5",
                 "3.4",
                 "3.3a",
                 "3.3"
