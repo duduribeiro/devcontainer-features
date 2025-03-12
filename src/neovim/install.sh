@@ -59,9 +59,9 @@ curl -sL https://github.com/neovim/neovim/archive/refs/tags/${ADJUSTED_VERSION}.
 
 echo "Building..."
 
-cd /tmp/neovim-${ADJUSTED_VERSION}
+cd /tmp/neovim-${VERSION}
 
 make && make CMAKE_INSTALL_PREFIX=/usr/local/nvim install
 ln -sf /usr/local/nvim/bin/nvim /usr/local/bin/nvim
 
-rm -rf /tmp/neovim-${ADJUSTED_VERSION}
+rm -rf /tmp/neovim-${VERSION}
