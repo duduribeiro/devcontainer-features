@@ -3,7 +3,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:1-bookworm",
         "features": {
             "neovim": {
-                "version": "nightly"
+                "version": "3.4"
             }
         }
     }
