@@ -26,6 +26,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 ADJUSTED_VERSION=$VERSION
+NVIM_TAG=$VERSION
 
 if [  "$VERSION" != "stable" ] && [  "$VERSION" != "nightly" ]; then
     ADJUSTED_VERSION="v$VERSION"
@@ -59,9 +60,10 @@ curl -sL https://github.com/neovim/neovim/archive/refs/tags/${ADJUSTED_VERSION}.
 
 echo "Building..."
 
-cd /tmp/neovim-${ADJUSTED_VERSION}
+# source directory name is one of [neovim-stable, neovim-nightly, neovim-<MAJOR>.<MINOR>.<PATCH>]
+cd /tmp/neovim-${NVIM_TAG}
 
 make CMAKE_BUILD_TYPE=Release && make CMAKE_INSTALL_PREFIX=/usr/local/nvim install
 ln -sf /usr/local/nvim/bin/nvim /usr/local/bin/nvim
 
-rm -rf /tmp/neovim-${ADJUSTED_VERSION}
+rm -rf /tmp/neovim-${NVIM_TAG}
